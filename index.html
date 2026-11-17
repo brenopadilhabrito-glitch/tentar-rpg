@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#111a16" />
+		<title>Verdejante — mundo aberto 2D</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="rpg.js?v=2" defer></script>
+	</head>
+	<body>
+		<section class="creation-screen" id="creation-screen" aria-labelledby="creation-title">
+			<div class="creation-shell">
+				<header class="creation-header">
+					<div class="wordmark-mark" aria-hidden="true"></div>
+					<div><p class="eyebrow">CAPÍTULO I · O DESPERTAR</p><h1 id="creation-title">Um mundo à espera do seu nome</h1></div>
+			</header>
+			<p class="creation-intro">Trace seu próprio caminho em Verdejante. Escolha quem você é — e prepare-se para descobrir quem pode se tornar.</p>
+			<div class="creation-facts" aria-label="Conteúdo da aventura">
+					<span><strong>13</strong><small>raças</small></span>
+					<span><strong>13</strong><small>classes</small></span>
+					<span><strong>10</strong><small>regiões</small></span>
+					<span><strong>120</strong><small>andares</small></span>
+			</div>
+			<div class="creation-columns">
+				<section class="choice-section" aria-labelledby="race-title">
+					<h2 id="race-title">01 / RAÇA</h2>
+					<div class="choice-grid race-grid">
+						<button class="choice-card" type="button" data-race="human" aria-pressed="false"><strong>Humana</strong><small>Versátil e equilibrada, sem bônus nem fraquezas.</small></button>
+						<button class="choice-card" type="button" data-race="elf" aria-pressed="false"><strong>Elfa</strong><small>+25% em todas as magias, +50% nas de natureza e precisão com arcos.</small></button>
+						<button class="choice-card" type="button" data-race="vampire" aria-pressed="false"><strong>Vampira</strong><small>Rouba vida no corpo a corpo; mais fraca de dia e feroz à noite. Como maga elemental, pode escolher escuridão ou sangue como elemento.</small></button>
+						<button class="choice-card" type="button" data-race="dwarf" aria-pressed="false"><strong>Anã</strong><small>Resistente e robusta; recebe mais ouro ao coletar.</small></button>
+						<button class="choice-card" type="button" data-race="orc" aria-pressed="false"><strong>Orc</strong><small>Forte e imponente; causa mais dano físico.</small></button>
+						<button class="choice-card" type="button" data-race="halfling" aria-pressed="false"><strong>Halfling</strong><small>Pequena e ágil; move-se com mais velocidade.</small></button>
+						<button class="choice-card" type="button" data-race="gnome" aria-pressed="false"><strong>Gnomo</strong><small>Magias de cura restauram 15% a mais.</small></button>
+						<button class="choice-card" type="button" data-race="draconian" aria-pressed="false"><strong>Draconiana</strong><small>Escamas resistentes ao fogo e sopro dracônico.</small></button>
+						<button class="choice-card" type="button" data-race="merfolk" aria-pressed="false"><strong>Ondina</strong><small>Afinidade com água e magia das marés.</small></button>
+						<button class="choice-card" type="button" data-race="goblin" aria-pressed="false"><strong>Goblin</strong><small>Ágil, oportunista e encontra mais ouro.</small></button>
+						<button class="choice-card" type="button" data-race="fairy" aria-pressed="false"><strong>Feérica</strong><small>Asas leves e afinidade com magia e cura.</small></button>
+						<button class="choice-card" type="button" data-race="beastkin" aria-pressed="false"><strong>Bestial</strong><small>Instintos aguçados e força para sobreviver.</small></button>
+						<button class="choice-card" type="button" data-race="tiefling" aria-pressed="false"><strong>Tiefling</strong><small>Resiste ao fogo e domina energias sombrias.</small></button>
+					</div>
+				</section>
+				<section class="choice-section" aria-labelledby="class-title">
+					<h2 id="class-title">02 / CLASSE</h2>
+					<div class="choice-grid class-grid">
+						<button class="choice-card" type="button" data-class="tank" aria-pressed="false"><strong>Tank</strong><small>Escudo, provocação e defesa para resistir.</small></button>
+						<button class="choice-card" type="button" data-class="mage" aria-pressed="false"><strong>Maga elemental</strong><small>Projéteis e explosões mágicas de longo alcance.</small></button>
+						<button class="choice-card" type="button" data-class="warrior" aria-pressed="false"><strong>Guerreira</strong><small>Combate corpo a corpo e golpes de impacto.</small></button>
+						<button class="choice-card" type="button" data-class="archer" aria-pressed="false"><strong>Arqueira</strong><small>Arcos, precisão e ataques de longa distância.</small></button>
+						<button class="choice-card" type="button" data-class="healer" aria-pressed="false"><strong>Magia de cura</strong><small>Restauração, proteção e magia à distância.</small></button>
+						<button class="choice-card" type="button" data-class="rogue" aria-pressed="false"><strong>Ladina</strong><small>Adagas, golpes precisos e ataques velozes.</small></button>
+						<button class="choice-card" type="button" data-class="paladin" aria-pressed="false"><strong>Paladina</strong><small>Combate defensivo e poder sagrado.</small></button>
+						<button class="choice-card" type="button" data-class="druid" aria-pressed="false"><strong>Druida</strong><small>Magia da natureza, proteção e restauração.</small></button>
+						<button class="choice-card" type="button" data-class="necromancer" aria-pressed="false"><strong>Necromante</strong><small>Magia sombria, roubo de vida e controle.</small></button>
+						<button class="choice-card" type="button" data-class="monk" aria-pressed="false"><strong>Monja</strong><small>Combate desarmado, velocidade e defesa.</small></button>
+						<button class="choice-card" type="button" data-class="bard" aria-pressed="false"><strong>Barda</strong><small>Melodias mágicas, apoio e ataques à distância.</small></button>
+						<button class="choice-card" type="button" data-class="ranger" aria-pressed="false"><strong>Patrulheira</strong><small>Arco e armadilhas para caçar em qualquer terreno.</small></button>
+						<button class="choice-card" type="button" data-class="duelist" aria-pressed="false"><strong>Duelista</strong><small>Espada veloz, precisão e contra-ataques.</small></button>
+					</div>
+					<section class="element-section" id="element-section" aria-labelledby="element-title" hidden>
+						<h3 id="element-title">ELEMENTO DA MAGA</h3>
+						<p>Suas magias serão somente do elemento escolhido.</p>
+						<div class="choice-grid element-grid">
+							<button class="choice-card" type="button" data-element="fire" aria-pressed="false"><strong>Fogo</strong></button>
+							<button class="choice-card" type="button" data-element="water" aria-pressed="false"><strong>Água</strong></button>
+							<button class="choice-card" type="button" data-element="ice" aria-pressed="false"><strong>Gelo</strong></button>
+							<button class="choice-card" type="button" data-element="lightning" aria-pressed="false"><strong>Raio</strong></button>
+							<button class="choice-card" type="button" data-element="earth" aria-pressed="false"><strong>Terra</strong></button>
+							<button class="choice-card" type="button" data-element="nature" aria-pressed="false"><strong>Natureza</strong></button>
+							<button class="choice-card" type="button" data-element="dark" aria-pressed="false" hidden><strong>Escuridão</strong></button>
+							<button class="choice-card" type="button" data-element="blood" aria-pressed="false" hidden><strong>Sangue</strong></button>
+						</div>
+					</section>
+				</section>
+			</div>
+			<div class="creation-bottom">
+				<section class="appearance-section" aria-labelledby="appearance-title">
+					<h2 id="appearance-title">03 / APARÊNCIA</h2>
+					<div class="appearance-controls">
+						<button class="appearance-option" type="button" data-appearance="girl" aria-pressed="false">Garota</button>
+						<button class="appearance-option" type="button" data-appearance="boy" aria-pressed="false">Garoto</button>
+					</div>
+					<label class="name-field">NOME DO HERÓI<input id="hero-name" maxlength="18" value="Viajante" autocomplete="off" /></label>
+				</section>
+				<aside class="creation-preview" aria-live="polite">
+					<canvas id="character-preview" width="120" height="120" aria-label="Prévia do personagem"></canvas>
+					<div><p class="eyebrow">SUA JORNADA</p><strong id="creation-summary">Escolha uma raça e uma classe</strong><small id="creation-details">Aparência: garota</small></div>
+				</aside>
+			</div>
+			<footer class="creation-footer"><span>AS ESCOLHAS DE RAÇA E CLASSE SÓ PODEM SER ALTERADAS AO RESETAR O PERSONAGEM.</span><button class="begin-button" id="begin-adventure" type="button" disabled>Começar aventura <span aria-hidden="true">→</span></button></footer>
+		</div>
+		</section>
+		<main class="game-shell">
+			<header class="topbar">
+				<div class="wordmark">
+					<span class="wordmark-mark" aria-hidden="true"></span>
+					<div>
+						<p class="eyebrow">MUNDO ABERTO · 2D</p>
+						<h1>VERDEJANTE</h1>
+					</div>
+				</div>
+				<nav class="game-nav" aria-label="Menus do jogo">
+					<button type="button" data-panel="character">Herói</button>
+					<button type="button" data-panel="inventory">Mochila</button>
+					<button type="button" data-panel="skills">Habilidades</button>
+					<button type="button" data-panel="quests">Diário</button>
+				</nav>
+				<button class="fullscreen-button" id="fullscreen-button" type="button" title="Ativar tela cheia" aria-label="Ativar tela cheia">
+					<span aria-hidden="true">⛶</span><span>Tela cheia</span>
+				</button>
+				<button class="reset-button" id="reset-button" type="button" title="Resetar personagem: perder nível e itens" aria-label="Resetar personagem">
+					<span aria-hidden="true">↺</span>
+					<span>Resetar</span>
+				</button>
+			</header>
+
+			<section class="world-wrap" aria-label="Mundo aberto para explorar">
+				<canvas id="world-canvas" aria-label="Mundo 2D. Use WASD ou as setas para explorar. No celular, use o joystick.">
+					Seu navegador não suporta canvas.
+				</canvas>
+				<div class="world-tag"><span class="status-dot" aria-hidden="true"></span><span id="biome-label">BOSQUE VERDE</span></div>
+				<p class="coordinates" id="position" aria-live="polite">X 000 · Y 000</p>
+				<section class="player-hud" aria-label="Status do personagem">
+					<div class="hud-heading"><strong id="level-label">NV. 1</strong><span id="identity-label">VIAJANTE</span><strong id="coin-label">◆ 35</strong></div>
+					<div class="meter-row"><span>PV</span><div class="meter"><i id="health-fill"></i></div><b id="health-label">124 / 124</b></div>
+					<div class="meter-row"><span>PM</span><div class="meter mana"><i id="mana-fill"></i></div><b id="mana-label">56 / 56</b></div>
+					<div class="meter xp-meter"><i id="xp-fill"></i></div>
+					<p class="effect-label" id="effect-label"></p>
+				</section>
+				<div class="action-bar" aria-label="Ações e habilidades">
+					<button type="button" data-cast="attack"><kbd>CLIQUE</kbd><span>Atacar</span></button>
+					<button type="button" data-cast="potion"><kbd>Q</kbd><span>Poção</span></button>
+					<button type="button" data-cast="slot1"><kbd>1</kbd><span>Hab. 1</span></button>
+					<button type="button" data-cast="slot2"><kbd>2</kbd><span>Hab. 2</span></button>
+					<button type="button" data-cast="slot3"><kbd>3</kbd><span>Hab. 3</span></button>
+					<button type="button" data-cast="slot4"><kbd>4</kbd><span>Hab. 4</span></button>
+					<button type="button" data-cast="slot5"><kbd>5</kbd><span>Hab. 5</span></button>
+				</div>
+				<div class="interaction-hint" id="interaction-hint" hidden></div>
+				<div class="touch-controls" aria-label="Controles de movimento">
+					<button class="move-joystick" id="move-joystick" type="button" aria-label="Joystick de movimento. Arraste para mover.">
+						<span class="joystick-knob" id="joystick-knob" aria-hidden="true"></span>
+					</button>
+					<div class="touch-actions">
+						<button type="button" id="touch-attack" aria-label="Atacar inimigo">⚔</button>
+						<button type="button" id="interact-button" aria-label="Interagir">USAR</button>
+					</div>
+				</div>
+			</section>
+			<aside class="game-panel" id="game-panel" hidden aria-labelledby="panel-title">
+				<header class="panel-header"><h2 id="panel-title"></h2><button id="close-panel" type="button" aria-label="Fechar menu">×</button></header>
+				<div class="panel-content" id="panel-content"></div>
+			</aside>
+			<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+			<footer class="bottombar">
+				<p class="hint"><span class="desktop-hint">WASD / SETAS · E INTERAGE · CLIQUE ATACA · Q POÇÃO</span><span class="touch-hint">USE O JOYSTICK PARA SE MOVER</span></p>
+				<p class="key-hint"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><span>OU</span><kbd>↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd></p>
+			</footer>
+		</main>
+	</body>
+</html>
